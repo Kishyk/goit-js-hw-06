@@ -3,9 +3,11 @@ function getRandomHexColor() {
     .toString(16)
     .padStart(6, 0)}`;
 }
-function createBoxes(amount) {
-  const boxesContainer = document.getElementById('boxes');
 
+
+const boxesContainer = document.getElementById('boxes');
+
+function createBoxes(amount) {
   destroyBoxes();
 
   let size = 30;
@@ -20,7 +22,6 @@ function createBoxes(amount) {
 }
 
 function destroyBoxes() {
-  const boxesContainer = document.getElementById('boxes');
   boxesContainer.innerHTML = '';
 }
 
